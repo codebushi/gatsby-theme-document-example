@@ -1,18 +1,18 @@
-import nightOwl from '@theme-ui/prism/presets/night-owl.json';
-import colors from './colors';
-import headings from './headings';
+import nightOwl from "@theme-ui/prism/presets/night-owl.json";
+import colors from "./colors";
+import headings from "./headings";
 
-const transition = '0.2s ease-out';
+const transition = "0.2s ease-out";
 const systemFonts =
-  '-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif';
+  "-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif";
 
 export default {
-  initialColorMode: `light`,
+  initialColorMode: `dark`,
   colors,
   fonts: {
     body: systemFonts,
     heading: systemFonts,
-    monospace: 'Menlo, monospace'
+    monospace: "Menlo, monospace"
   },
   fontSizes: [12, 14, 16, 24, 28, 36, 48, 64],
   fontWeights: {
@@ -25,24 +25,24 @@ export default {
     heading: 1.125
   },
   letterSpacings: {
-    body: 'normal',
-    caps: '0.2em'
+    body: "normal",
+    caps: "0.2em"
   },
   breakpoints: [
-    ['phone_small', 320],
-    ['phone', 376],
-    ['phablet', 540],
-    ['tablet', 735],
-    ['desktop', 1070],
-    ['desktop_medium', 1280],
-    ['desktop_large', 1440]
+    ["phone_small", 320],
+    ["phone", 376],
+    ["phablet", 540],
+    ["tablet", 735],
+    ["desktop", 1070],
+    ["desktop_medium", 1280],
+    ["desktop_large", 1440]
   ],
   transition,
   styles: {
     root: {
-      fontFamily: 'body',
-      lineHeight: 'body',
-      fontWeight: 'body',
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "body",
       ...headings
     },
     ...headings,
@@ -50,16 +50,16 @@ export default {
       my: 4
     },
     a: {
-      color: 'secondary',
+      color: "secondary",
       transition: `color ${transition}`,
-      ':hover,:focus': {
-        color: 'text'
+      ":hover,:focus": {
+        color: "text"
       }
     },
     pre: {
       ...nightOwl,
       fontFamily: `"Operator Mono", monospace`,
-      fontSize: '0.9rem',
+      fontSize: "0.9rem",
       tabSize: 4,
       hyphens: `none`,
       overflow: `auto`,
@@ -75,17 +75,17 @@ export default {
       py: `0.2rem`
     },
     table: {
-      width: '100%',
-      borderCollapse: 'separate',
+      width: "100%",
+      borderCollapse: "separate",
       borderSpacing: 0
     },
     th: {
-      textAlign: 'left',
-      borderBottomStyle: 'solid'
+      textAlign: "left",
+      borderBottomStyle: "solid"
     },
     td: {
-      textAlign: 'left',
-      borderBottomStyle: 'solid'
+      textAlign: "left",
+      borderBottomStyle: "solid"
     }
   }
 };
