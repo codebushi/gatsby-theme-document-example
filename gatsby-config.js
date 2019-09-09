@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Document by Code Bushi`,
     name: `Code Bushi`,
-    siteUrl: `https://codebushi.com`,
+    siteUrl: `https://gatsby-theme-document.surge.sh`,
     description: `This is my description that will be used in the meta tags and important for search results`,
     social: [
       {
         name: `github`,
-        url: `https://github.com/codebushi`
+        url: `https://github.com/codebushi/gatsby-theme-document`
       },
       {
         name: `twitter`,
@@ -15,7 +15,7 @@ module.exports = {
       }
     ],
     sidebarConfig: {
-      forcedNavOrder: ['/introduction', '/codeblock'],
+      forcedNavOrder: ["/introduction", "/codeblock"],
       ignoreIndex: true
     }
   },
