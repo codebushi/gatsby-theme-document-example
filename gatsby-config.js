@@ -19,5 +19,5 @@ module.exports = {
       ignoreIndex: true
     }
   },
-  plugins: [{ resolve: `gatsby-theme-document`, options: {} }]
+  plugins: [{ resolve: `gatsby-theme-document` }]
 };
